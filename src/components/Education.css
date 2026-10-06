@@ -1,0 +1,185 @@
+.education-section {
+  position: relative;
+}
+
+.education-timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent-purple) 0%, var(--accent-cyan) 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 2rem;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 9px;
+  top: 25px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.node-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(18, 18, 28, 0.9);
+  border: 2px solid var(--accent-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+.timeline-icon-purple {
+  color: var(--accent-purple-light);
+}
+
+.node-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-purple);
+  animation: pulse-glow 2s infinite;
+}
+
+.timeline-content {
+  padding: 2.25rem;
+}
+
+.degree-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.status-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--accent-cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.degree-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.field-title {
+  font-size: 1.15rem;
+  color: var(--accent-purple-light);
+  font-weight: 600;
+}
+
+.institution-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.info-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.pill-icon {
+  color: var(--accent-cyan);
+}
+
+.highlights-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 1.25rem 0;
+}
+
+.highlights-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+}
+
+.highlights-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.item-arrow {
+  color: var(--accent-purple-light);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 680px) {
+  .timeline-line {
+    left: 18px;
+  }
+  .timeline-node {
+    left: -3px;
+    width: 36px;
+    height: 36px;
+  }
+  .node-icon-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+  .timeline-item {
+    padding-left: 50px;
+  }
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  .degree-title {
+    font-size: 1.3rem;
+  }
+}
