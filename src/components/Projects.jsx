@@ -1,5 +1,8 @@
 import React from 'react';
 import { FolderGit2, Github, ExternalLink, Info } from './Icons';
+import greensphereImg from '../assets/images/greensphere_project.jpg';
+import calculatorImg from '../assets/images/calculator_project.jpg';
+import weatherImg from '../assets/images/weather_project.jpg';
 import './Projects.css';
 
 const Projects = ({ onSelectProject }) => {
@@ -9,7 +12,7 @@ const Projects = ({ onSelectProject }) => {
       title: 'GreenSphere',
       category: 'Smart Waste & Sustainability',
       badge: 'Featured GitHub Project',
-      image: '/assets/images/greensphere_project.jpg',
+      image: greensphereImg,
       shortDesc: 'A Smart Segregation and Decentralized Composting system for market wet waste.',
       longDesc: 'GreenSphere is a Smart Segregation and Decentralized Composting system tailored for market wet waste. Built with Python, HTML, CSS, JavaScript, and Firebase database integration, it enables efficient waste management, real-time monitoring, and sustainable composting operations.',
       tags: ['Python', 'Firebase', 'HTML5', 'CSS3', 'JavaScript'],
@@ -27,7 +30,7 @@ const Projects = ({ onSelectProject }) => {
       title: 'Calculator',
       category: 'Web Application',
       badge: 'Utility Web App',
-      image: '/assets/images/calculator_project.jpg',
+      image: calculatorImg,
       shortDesc: 'An interactive digital calculator application designed to perform arithmetic calculations.',
       longDesc: 'A responsive web calculator built with clean frontend technologies. Provides accurate arithmetic calculation features, key press input support, error handling, and a sleek user-friendly UI layout.',
       tags: ['JavaScript', 'HTML5', 'CSS3'],
@@ -45,7 +48,7 @@ const Projects = ({ onSelectProject }) => {
       title: 'Weather App',
       category: 'Web Application',
       badge: 'Real-Time API App',
-      image: '/assets/images/weather_project.jpg',
+      image: weatherImg,
       shortDesc: 'A real-time weather forecasting application built using JavaScript, HTML, and CSS.',
       longDesc: 'Weather App is a lightweight frontend application that communicates with live weather APIs to provide real-time atmospheric data including temperature, humidity, wind speed, and weather condition forecasts for searched locations.',
       tags: ['JavaScript', 'Weather API', 'HTML5', 'CSS3'],

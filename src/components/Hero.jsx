@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, Download, ArrowRight, Sparkles, Terminal } from './Icons';
+import heroProfileImg from '../assets/images/hero_profile.jpg';
 import './Hero.css';
 
 const Hero = ({ onOpenResumeModal }) => {
@@ -134,7 +135,7 @@ const Hero = ({ onOpenResumeModal }) => {
             <div className="avatar-glow-ring" />
             <div className="avatar-image-container">
               <img
-                src="/assets/images/hero_profile.jpg"
+                src={heroProfileImg}
                 alt="Abhinash Singh Profile"
                 className="hero-avatar-img"
               />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, Cpu, Code, GraduationCap, Compass } from './Icons';
+import aboutProfileImg from '../assets/images/about_profile.jpg';
 import './About.css';
 
 const About = () => {
@@ -45,7 +46,7 @@ const About = () => {
           <div className="about-visual">
             <div className="about-image-wrapper">
               <img
-                src="/assets/images/about_profile.jpg"
+                src={aboutProfileImg}
                 alt="Abhinash Singh Coding"
                 className="about-img"
               />
